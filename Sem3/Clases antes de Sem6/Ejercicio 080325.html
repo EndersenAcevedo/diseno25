@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Colorida</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            flex: 50%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .logo {
+            background-color: green;
+            padding: 10px;
+            font-weight: bold;
+            color: black;
+        }
+        .menu {
+            background-color: grey;
+            padding: 10px;
+            font-weight: bold;
+            color: black;
+        }
+        .content {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+        .columns {
+            display: flex;
+        }
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+        .column.red {
+            background-color: red;
+            color: black;
+        }
+        .column.yellow {
+            background-color: yellow;
+            color: black;
+        }
+        .footer {
+            background-color: deepskyblue;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Logo</div>
+        <div class="menu">Menú</div>
+    </div>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, neque voluptate blanditiis dolores voluptatem odit, labore perferendis quisquam fugit accusamus consectetur cumque explicabo illo eius ab beatae soluta eligendi maxime?</p>
+    </div>
+    <div class="columns">
+        <div class="column red">
+            <h2>Titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium pariatur odit ullam facere mollitia in quos ratione totam magnam, autem provident eaque possimus maiores vero numquam. Recusandae itaque ipsa laudantium!</p>
+        </div>
+        <div class="column yellow">
+            <h2>Titulo</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit unde excepturi enim placeat! Ipsum corporis error dolor incidunt labore! Sit quam sequi ex enim, esse possimus dolor necessitatibus? Quia, iure?</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Titulo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet corrupti suscipit amet, recusandae at vitae iste laborum perferendis quibusdam a earum praesentium debitis fuga minus? Quam, deserunt? Ad, at et!</p>
+    </div>
+</body>
+</html>

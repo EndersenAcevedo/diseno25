@@ -1,0 +1,78 @@
+.list-group-item{
+    display: flex; /* Flexbox para alinear los elementos */
+    align-items: center;
+    gap: 1rem; /* Espacio entre los elementos */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 0.1rem 0 2px 0; /* Espacio entre los elementos de la lista */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.2s; /* Transición suave */
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Color del texto */
+    border-color: #c0bdbd; /* Color del borde */
+    border: 1px; /* Borde */
+    border-style: solid; /* Estilo del borde */
+}
+
+.item-image{
+    width: 80px;
+    height: 80px;
+    object-fit: cover; /* formato de caja */
+
+}
+
+.item-content{
+    flex-grow: 1;
+    height: 100px;
+
+
+}
+.item-title{
+    font-weight: bold;
+    margin: 0;
+}
+
+.item-description{
+    margin: 0;
+    color: #c0bdbd;
+}
+
+/*Ajustes de pantalla oara resoluciones peque;as */
+@media (max-width: 576px){
+    /* Esta restriccion hara que el tama;o de la imagen se reduzca */
+    .item-image{
+        width: 30px;
+        height: 30px;
+        object-fit: cover; /* formato de caja */
+    }
+    /*Esta restriccion hara que se oculte el texto*/
+    .item-description{
+        visibility: hidden; /* Oculta la descripcion */
+    }
+}
+
+/*Estilos del Footer */
+footer{
+    background-color: #e4c5c5;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 1rem;
+}
+
+footer p{
+    margin: 0;
+    color: #333; /* Color del texto */
+}
+
+footer i{
+    margin-right: 0.5rem; /* Espacio entre el icono y el texto */
+    color: blue;
+}
+
+/*Estilos del Carrousel tama;o de las imagenes */
+.carrousel-item img{
+    width: 60%;
+    height: 60%;
+    object-fit: cover; /* formato de caja */
+}

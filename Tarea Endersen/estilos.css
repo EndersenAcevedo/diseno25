@@ -1,0 +1,93 @@
+*{
+    /*Quitamos todos los estilos*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+/*Estilo de imagen de fondo*/
+.container{
+    display: flex;
+    justify-content: flex-end; /*Alinea el contenido a la derecha*/
+    align-items: center; /*Alinea el contenido verticalmente*/
+    background-image: url(minDeSalud.png); /*Imagen de fondo*/
+    background-repeat: no-repeat; /*No repetir la imagen*/
+    background-size: cover; /*Se le puede poner el 100% pero con cover, rellena todo el contenedor*/
+    height: 100vh; /*Altura del contenedor*/
+    width: 100%; /*Ancho del contenedor*/
+    position: absolute; /*Posiciona el contenedor*/
+    padding: 0%; /*Rellena el contenedor*/
+}
+
+/*Estilos de los botones*/
+button{
+    transition-duration: 0.5s; /*Duración de la transición*/
+}
+/*hover de los botones*/
+button:hover{
+    transform: scale(1.04); /*Escala el botón al pasar el mouse*/
+    transition-duration: 0.5s; /*Duración de la transición*/
+}
+
+/*Estilo del logo del MinSal*/
+img{
+    justify-content: flex-end; 
+    align-items: center; /*Alinea el contenido verticalmente*/
+    width: 15%; /*Ancho de la imagen*/
+    height: 15%; /*Altura de la imagen*/
+    margin-right: 1rem; /*Margen derecho de la imagen*/
+    transition-duration: 0.5s; /*Duración de la transición*/
+}
+/*Estilo del logo del MinSal al pasar el mouse*/
+img:hover{
+    transform: scale(1.1); /*Escala la imagen al pasar el mouse*/
+    transition-duration: 0.5s; /*Duración de la transición*/
+}
+
+/*Estilo del contenedor de la tarjeta*/
+.container-content{
+    width: 60%; /*Ancho del contenido*/
+    margin-left: 5rem; /*Margen de la izquierda*/
+    padding: 6rem 2rem; /*Espaciado de arriba, abajo y de costados*/
+}
+
+/*Estilo para el PopUp*/
+.popup-overlay {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté encima de todo */
+}
+
+/* Estilo del cuadro emergente */
+.popup-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón para cerrar */
+.close-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #0056b3;
+}
